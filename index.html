@@ -12,6 +12,9 @@
   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
+  <!-- Babel (required to run JSX directly in the browser) -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
   <style>
     body {
       background: #f8fafc;
@@ -21,7 +24,7 @@
 <body class="p-4">
   <div id="root"></div>
 
-  <!-- Your App Code -->
-  <script src="app.js"></script>
+  <!-- Load JSX code via Babel -->
+  <script type="text/babel" src="app.js"></script>
 </body>
 </html>
